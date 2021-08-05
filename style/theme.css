@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+:root {
+  --r-background-color: #fafafa;
+  --r-main-font: "Inter", sans-serif;
+  --r-heading-font: "Inter", sans-serif;
+  --r-heading-text-transform: none;
+  --r-heading-font-weight: 500;
+  --r-heading1-size: 2.5em;
+  --r-heading2-size: 1.6em;
+  --r-heading3-size: 1.3em;
+  --r-heading4-size: 1em;
+  --r-main-color: #313840;
+  --r-heading-color: #313840;
+  --r-link-color: #70d4ea;
+  --r-link-color-hover: #acebfd;
+  --r-code-font: "Roboto Mono", monospace;
+}

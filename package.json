@@ -1,0 +1,15 @@
+{
+  "name": "software_development_101",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "./build.sh",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.4.4"
+  },
+  "dependencies": {
+    "reveal.js": "^4.1.3"
+  }
+}
