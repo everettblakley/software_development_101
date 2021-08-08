@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --r-background-color: #fafafa;
   --r-main-font: "Inter", sans-serif;
@@ -16,4 +20,15 @@
   --r-link-color: #70d4ea;
   --r-link-color-hover: #acebfd;
   --r-code-font: "Roboto Mono", monospace;
+}
+
+.text-code {
+  font-family: var(--r-code-font);
+}
+
+.columns {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  grid-gap: 1rem;
 }
