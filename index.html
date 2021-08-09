@@ -5,11 +5,12 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/node_modules/reveal.js/dist/reveal.css" />
+    <link rel="stylesheet" href="node_modules/reveal.js/dist/theme/white.css" />
+    <link rel="stylesheet" href="/style/theme.css" />
     <link
       rel="stylesheet"
-      href="/node_modules/reveal.js/dist/theme/white.css"
+      href="node_modules/reveal.js/plugin/highlight/monokai.css"
     />
-    <link rel="stylesheet" href="/style/theme.css" />
     <title>Software Development 101</title>
   </head>
   <body>
@@ -23,11 +24,15 @@
         </section>
         <section>
           <h1 class="r-fit-text">Software Development</h1>
-          <p style="text-align: left">
-            Software development refers to a set of computer science activities
+          <p class="italic text-left text-gray-500">
+            "Software development refers to a set of computer science activities
             dedicated to the process of creating, designing, deploying and
-            supporting software
+            supporting software"
           </p>
+          <a
+            href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjhuqfvgqXyAhXSi54KHRcDCgwQFnoECA0QAw&url=https%3A%2F%2Fwww.ibm.com%2Ftopics%2Fsoftware-development&usg=AOvVaw2mvLha7kSSub1YZelnu3Re"
+            ><small class="w-full text-right">IBM</small></a
+          >
         </section>
         <section>
           <h1 class="r-fit-text">Software Development Life Cycle (SDLC)</h1>
@@ -42,56 +47,165 @@
           </ul>
         </section>
         <section>
-          <h1 class="r-fit-text text-4xl">Technology Stack</h1>
-          <h4>What does it take to create an app?</h4>
-          <div class="grid grid-cols-2 grid-rows-2 gap-2">
-            <div
-              class="
-                bg-blue-400
-                rounded
-                flex flex-col
-                items-center
-                justify-center
-                p-8
-                fragment
-                fade-right
-              "
-            >
-              <h3>Frontend</h3>
-              <small>What the user sees</small>
+          <section>
+            <h1 class="r-fit-text">The Tech Stack</h1>
+            <h2 class="fragment fade-left">
+              What technology does it take to create software?
+            </h2>
+          </section>
+          <section>
+            <h1>
+              <span class="flex items-center justify-center">
+                <img src="computer.svg" alt="" />
+                <span class="ml-6">Frontend</span></span
+              >
+            </h1>
+            <div class="grid grid-cols-2 r-stretch">
+              <div
+                class="flex flex-col items-center justify-center mr-6 fragment"
+              >
+                <small class="italic text-left text-gray-500">
+                  "Front-end web development, also known as client-side
+                  development is the practice of producing HTML, CSS and
+                  JavaScript for a website or Web Application so that a user can
+                  see and interact with them directly."
+                </small>
+                <a
+                  class="w-full mt-8 text-right"
+                  href="https://en.wikipedia.org/wiki/Front-end_web_development"
+                  ><small>Wikipedia (2021)</small></a
+                >
+              </div>
+              <div>
+                <span class="fragment">
+                  <pre><code data-trim data-noescape><script type="text/template">
+                    <html>
+                      <body>
+                        <p>hello world</p>
+                      </body>
+                    </html>
+                  </script></code></pre>
+                </span>
+                <span class="fragment">
+                  <pre><code data-trim data-noescape><script type="text/template">
+                    p {
+                      font-family: 'Inter';
+                      color: #313840;
+                    }
+                  </script></code></pre>
+                </span>
+                <span class="fragment">
+                  <pre><code data-trim data-noescape><script type="text/template">
+                  function() {
+                    console.log('wow');
+                  }
+                  </script></code></pre>
+                </span>
+              </div>
             </div>
-            <div
-              class="
-                bg-red-400
-                rounded
-                flex flex-col
-                items-center
-                justify-center
-                p-8
-                fragment
-                fade-left
-              "
-            >
-              <h3>Backend</h3>
-              <small>The business logic</small>
+          </section>
+          <section>
+            <h1>
+              <span class="flex items-center justify-center">
+                <img src="backend.svg" alt="" />
+                <span class="ml-6">Backend</span></span
+              >
+            </h1>
+            <div class="grid grid-cols-2 r-stretch">
+              <div
+                class="flex flex-col items-center justify-center mr-6 fragment"
+              >
+                <small class="italic text-left text-gray-500">
+                  "The server side of an application. The backend usually
+                  consists of three parts: a server, an application, and a
+                  database. User's can't see the backend work, but this code is
+                  what communications the database information to the browser."
+                </small>
+                <a
+                  class="w-full mt-8 text-right"
+                  href="https://www.coursereport.com/blog/front-end-development-vs-back-end-development-where-to-start"
+                  ><small>CourseReport (2021)</small></a
+                >
+              </div>
+              <div class="flex-auto">
+                <span class="fragment">
+                  <pre><code data-trim data-noescape><script type="text/template">
+                    def ApplicationController
+                      def index
+                        render partial: 'hello'
+                      end
+                    end
+                  </script></code></pre>
+                </span>
+                <span class="fragment">
+                  <pre><code data-trim data-noescape><script type="text/template">
+                    SELECT "id",
+                           "email"
+                           "name"
+                    FROM   "users"
+                    WHERE  "company" = 'MakeShift'
+                    ORDER  BY "hire_date" DESC, 
+                    LIMIT  1000  
+                  </script></code></pre>
+                </span>
+              </div>
             </div>
-            <div
-              class="
-                col-span-2
-                bg-gray-200
-                rounded
-                flex flex-col
-                items-center
-                justify-center
-                p-8
-                fragment
-                fade-down
-              "
-            >
-              <h3>Operations</h3>
-              <small>Pure black magic</small>
+          </section>
+          <section>
+            <h1>Operations</h1>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1 class="r-fit-text">The MakeShift Context</h1>
+            <h3>How do we make MakeShift?</h3>
+          </section>
+          <section>
+            <h1>Admin Web</h1>
+            <h5>
+              Technologies used to run
+              <a href="https://app.makeshift.ca">app.makeshift.ca</a>
+            </h5>
+            <div class="grid grid-flow-col gap-8 mt-16">
+              <div class="flex flex-col items-center">
+                <img class="h-16" src="vue.png" alt="VueJS logo" />
+                <p>VueJS</p>
+                <small class="italic text-gray-500">Frontend</small>
+              </div>
+              <div class="flex flex-col items-center">
+                <img class="h-16" src="rails.png" alt="Ruby on Rails logo" />
+                <p>Ruby on Rails</p>
+                <small class="italic text-gray-500">Frontend/Backend</small>
+              </div>
+              <div class="flex flex-col items-center">
+                <img class="h-16" src="postges.png" alt="PostgreSQL logo" />
+                <p>PostgreSQL</p>
+                <small class="italic text-gray-500">Backend</small>
+              </div>
+              <div class="flex flex-col items-center">
+                <img class="h-16" src="heroku.png" alt="Heroku logo" />
+                <p>Heroku</p>
+                <small class="italic text-gray-500">Operations</small>
+              </div>
             </div>
-          </div>
+          </section>
+          <section>
+            <h1>Whitelabels</h1>
+            <h2>Shift Manager (Jonas)</h2>
+            <h2>ADP Schedules</h2>
+          </section>
+          <section>
+            <h1>Mobile</h1>
+            <div class="grid grid-cols-2">
+              <h3></h3>
+            </div>
+          </section>
+          <section>
+            <h1>Employee Web</h1>
+            <h3>React</h3>
+            <h3>Heroku</h3>
+          </section>
+          <section></section>
         </section>
       </div>
     </main>

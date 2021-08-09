@@ -7,7 +7,7 @@ let deck = new Reveal({
 });
 
 deck.initialize({
-  hash: true
+  hash: true,
 });
 
 deck.getSlides().forEach((slide) => {
