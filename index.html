@@ -21,7 +21,9 @@
       <div class="slides">
         <section>
           <h1 class="r-fit-text">Software Development 101</h1>
-          <p class="fragment fade-left">What the hell is even that?</p>
+          <span class="subtitle fragment fade-left"
+            >What the hell is even that?</span
+          >
 
           <aside class="notes">Is this thing on?</aside>
         </section>
@@ -40,9 +42,9 @@
         <section>
           <section>
             <h1 class="r-fit-text">The Tech Stack</h1>
-            <h2 class="fragment fade-left">
-              What technology does it take to create software?
-            </h2>
+            <span class="subtitle fragment fade-left"
+              >What technology does it take to create software?</span
+            >
           </section>
           <section>
             <h1>
@@ -56,7 +58,7 @@
                 class="flex flex-col items-center justify-center mr-6 fragment"
               >
                 <small class="italic text-left text-gray-500">
-                  "Front-end web development, also known as client-side
+                  "Frontend web development, also known as client-side
                   development is the practice of producing HTML, CSS and
                   JavaScript for a website or Web Application so that a user can
                   see and interact with them directly."
@@ -107,10 +109,11 @@
                 class="flex flex-col items-center justify-center mr-6 fragment"
               >
                 <small class="italic text-left text-gray-500">
-                  "The server side of an application. The backend usually
-                  consists of three parts: a server, an application, and a
-                  database. User's can't see the backend work, but this code is
-                  what communications the database information to the browser."
+                  "Backend development refers to the server side of an
+                  application. The backend usually consists of three parts: a
+                  server, an application, and a database. User's can't see the
+                  backend work, but this code is what communications the
+                  database information to the browser."
                 </small>
                 <a
                   class="w-full mt-8 text-right"
@@ -149,13 +152,15 @@
                 <span class="ml-6">DevOps</span></span
               >
             </h1>
-            <div class="grid place-content-center r-stretch">
-              <span class="flex flex-col fragment">
+            <div class="grid grid-flow-col r-stretch">
+              <span
+                class="flex flex-col items-center justify-center mr-6 fragment"
+              >
                 <small class="italic text-left text-gray-500">
-                  A set of practices that combines software development (Dev)
-                  and IT operations (Ops). It aims to shorten the systems
-                  development life cycle and provide continuous delivery with
-                  high software quality.
+                  DevOps is a set of practices that combines software
+                  development (Dev) and IT operations (Ops). It aims to shorten
+                  the systems development life cycle and provide continuous
+                  delivery with high software quality.
                 </small>
                 <a
                   class="w-full mt-8 text-right"
@@ -163,135 +168,146 @@
                   ><small>Wikipedia</small></a
                 >
               </span>
+              <div class="pt-20 fragment fade-left">
+                <img src="devops-cycle.png" alt="" />
+              </div>
             </div>
           </section>
         </section>
         <section>
           <section>
-            <h1 class="r-fit-text">The MakeShift Context</h1>
-            <h3>How do we make MakeShift?</h3>
+            <h1 class="r-fit-text">The MakeShift Tech</h1>
+            <span class="subtitle fragment fade-right">
+              What tech goes into our product?
+            </span>
           </section>
           <section>
             <h1>Admin Web</h1>
-            <div class="grid grid-flow-col gap-8 mt-16">
-              <div
-                class="flex flex-col items-center fragment fade-up"
-                data-fragment-index="1"
-              >
-                <img class="h-20" src="vue.png" alt="VueJS logo" />
+            <div class="tech-card--list">
+              <div class="tech-card fragment fade-up" data-fragment-index="1">
+                <img src="vue.png" alt="VueJS logo" />
                 <p>VueJS</p>
-                <small class="italic text-gray-500">Frontend</small>
+                <small>Frontend</small>
               </div>
-              <div
-                class="flex flex-col items-center fragment fade-up"
-                data-fragment-index="1"
-              >
-                <img class="h-20" src="rails.png" alt="Ruby on Rails logo" />
+              <div class="tech-card fragment fade-up" data-fragment-index="1">
+                <img src="rails.png" alt="Ruby on Rails logo" />
                 <p>Ruby on Rails</p>
-                <small class="italic text-gray-500">
+                <small>
                   <div>Frontend</div>
                   <div class="fragment fade-up" data-fragment-index="2">
                     Backend
                   </div>
                 </small>
               </div>
-              <div
-                class="flex flex-col items-center fragment fade-up"
-                data-fragment-index="2"
-              >
-                <img class="h-20" src="postges.png" alt="PostgreSQL logo" />
+              <div class="tech-card fragment fade-up" data-fragment-index="2">
+                <img src="postges.png" alt="PostgreSQL logo" />
                 <p>PostgreSQL</p>
-                <small class="italic text-gray-500">Backend</small>
+                <small>Backend</small>
               </div>
-              <div
-                class="flex flex-col items-center fragment fade-up"
-                data-fragment-index="3"
-              >
-                <img class="h-20" src="circle-ci.png" alt="Circle CI logo" />
+              <div class="tech-card fragment fade-up" data-fragment-index="3">
+                <img src="circle-ci.png" alt="Circle CI logo" />
                 <p>Circle CI</p>
-                <small class="italic text-gray-500">DevOps</small>
+                <small>DevOps</small>
               </div>
-              <div
-                class="flex flex-col items-center fragment fade-up"
-                data-fragment-index="3"
-              >
-                <img class="h-20" src="heroku.png" alt="Heroku logo" />
+              <div class="tech-card fragment fade-up" data-fragment-index="3">
+                <img src="heroku.png" alt="Heroku logo" />
                 <p>Heroku</p>
-                <small class="italic text-gray-500">DevOps</small>
+                <small>DevOps</small>
               </div>
             </div>
           </section>
           <section>
-            <h1>Mobile</h1>
-            <div class="grid grid-flow-col gap-8 mt-16">
-              <div
-                class="flex flex-col items-center fragment fade-up"
-                data-fragment-index="1"
-              >
-                <img class="h-20" src="java.png" alt="Java logo" />
+            <h1 class="r-fit-text">MakeShift and MakeShift Live</h1>
+            <div class="tech-card--list">
+              <div class="tech-card fragment fade-up" data-fragment-index="1">
+                <img src="java.png" alt="Java logo" />
                 <p>Java</p>
-                <small class="italic text-gray-500">Frontend (Android)</small>
+                <small>"Frontend" (Android)</small>
               </div>
-              <div
-                class="flex flex-col items-center fragment fade-up"
-                data-fragment-index="1"
-              >
-                <img
-                  class="h-20"
-                  src="objective-c.png"
-                  alt="Objective C logo"
-                />
+              <div class="tech-card fragment fade-up" data-fragment-index="1">
+                <img src="objective-c.png" alt="Objective C logo" />
                 <p>Objective-C</p>
-                <small class="italic text-gray-500">Frontend (iOS)</small>
+                <small>"Frontend" (iOS)</small>
               </div>
-              <div
-                class="flex flex-col items-center fragment fade-up"
-                data-fragment-index="2"
-              >
-                <img class="h-20" src="makeshift.png" alt="MakeShift logo" />
+              <div class="tech-card fragment fade-up" data-fragment-index="2">
+                <img src="makeshift.png" alt="MakeShift logo" />
                 <p>MakeShift</p>
-                <small class="italic text-gray-500">Backend (via API)</small>
+                <small>Backend (via API)</small>
+              </div>
+              <div class="tech-card fragment fade-up" data-fragment-index="3">
+                <img src="circle-ci.png" alt="Circle CI logo" />
+                <p>Circle CI</p>
+                <small>DevOps (Android)</small>
+              </div>
+              <div class="tech-card fragment fade-up" data-fragment-index="3">
+                <img src="fastlane.png" alt="Fastlane logo" />
+                <p>Fastlane</p>
+                <small>DevOps (iOS)</small>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h1>Connect</h1>
+            <div class="tech-card--list">
+              <div class="tech-card fragment fade-up" data-fragment-index="1">
+                <img src="java.png" alt="Java logo" />
+                <p>Java</p>
+                <small>"Frontend" (Android)</small>
+              </div>
+              <div class="tech-card fragment fade-up" data-fragment-index="1">
+                <img src="swift.png" alt="Swift logo" />
+                <p>Swift</p>
+                <small>"Frontend" (iOS)</small>
+              </div>
+              <div class="tech-card fragment fade-up" data-fragment-index="2">
+                <img src="phoenix.png" alt="Phoenix logo" />
+                <p>Phoenix</p>
+                <small>Backend</small>
+              </div>
+              <div class="tech-card fragment fade-up" data-fragment-index="2">
+                <img src="postges.png" alt="PostgreSQL logo" />
+                <p>PostgreSQL</p>
+                <small>Backend</small>
+              </div>
+              <div class="tech-card fragment fade-up" data-fragment-index="3">
+                <img src="heroku.png" alt="Heroku logo" />
+                <p>Heroku</p>
+                <small>DevOps</small>
               </div>
             </div>
           </section>
           <section>
             <h1>Employee Web</h1>
-            <div class="grid grid-flow-col gap-8 mt-16">
-              <div class="flex flex-col items-center fragment fade-up">
-                <img class="h-20" src="react.png" alt="React logo" />
+            <div class="tech-card--list">
+              <div class="tech-card fragment fade-up">
+                <img src="react.png" alt="React logo" />
                 <p>ReactJS</p>
-                <small class="italic text-gray-500">Frontend</small>
+                <small>Frontend</small>
               </div>
-              <div class="flex flex-col items-center fragment fade-up">
-                <img class="h-20" src="makeshift.png" alt="MakeShift logo" />
+              <div class="tech-card fragment fade-up">
+                <img src="makeshift.png" alt="MakeShift logo" />
                 <p>MakeShift</p>
-                <small class="italic text-gray-500">Backend (via API)</small>
+                <small>Backend (via API)</small>
               </div>
-              <div class="flex flex-col items-center fragment fade-up">
-                <img class="h-20" src="heroku.png" alt="Heroku logo" />
+              <div class="tech-card fragment fade-up">
+                <img src="heroku.png" alt="Heroku logo" />
                 <p>Heroku</p>
-                <small class="italic text-gray-500">DevOps</small>
+                <small>DevOps</small>
               </div>
             </div>
           </section>
         </section>
         <section>
           <section>
-            <h1>
-              What the
-              <span class="italic fragment highlight-red">hell</span> is an
-              API?!
-            </h1>
+            <h1>So wait, what the heck is an API?!</h1>
           </section>
           <section data-auto-animate class="relative h-full">
             <div
               data-id="api-animation"
               style="position: absolute; top: 30%; left: 50%"
             >
-              <span class="inline-block text-6xl font-medium">A</span
-              ><span
-                class="inline-block text-6xl font-medium"
-                style="opacity: 0"
+              <span class="animation-title">A</span
+              ><span class="animation-title" style="opacity: 0"
                 >pplication</span
               >
             </div>
@@ -299,10 +315,8 @@
               data-id="api-animation"
               style="position: absolute; top: 40%; left: 50%"
             >
-              <span class="inline-block text-6xl font-medium">P</span
-              ><span
-                class="inline-block text-6xl font-medium"
-                style="opacity: 0"
+              <span class="animation-title">P</span
+              ><span class="animation-title" style="opacity: 0"
                 >rogramming</span
               >
             </div>
@@ -310,12 +324,8 @@
               data-id="api-animation"
               style="position: absolute; top: 50%; left: 50.8%"
             >
-              <span class="inline-block text-6xl font-medium">I</span
-              ><span
-                class="inline-block text-6xl font-medium"
-                style="opacity: 0"
-                >nterface</span
-              >
+              <span class="animation-title">I</span
+              ><span class="animation-title" style="opacity: 0">nterface</span>
             </div>
           </section>
           <section data-auto-animate class="relative h-full">
@@ -323,10 +333,8 @@
               data-id="api-animation"
               style="position: absolute; top: 30%; left: 0"
             >
-              <span class="inline-block text-6xl font-medium">A</span
-              ><span
-                class="inline-block text-6xl font-medium"
-                style="opacity: 1"
+              <span class="animation-title">A</span
+              ><span class="animation-title" style="opacity: 1"
                 >pplication</span
               >
             </div>
@@ -334,10 +342,8 @@
               data-id="api-animation"
               style="position: absolute; top: 40%; left: 50%"
             >
-              <span class="inline-block text-6xl font-medium">P</span
-              ><span
-                class="inline-block text-6xl font-medium"
-                style="opacity: 0"
+              <span class="animation-title">P</span
+              ><span class="animation-title" style="opacity: 0"
                 >rogramming</span
               >
             </div>
@@ -345,12 +351,8 @@
               data-id="api-animation"
               style="position: absolute; top: 50%; left: 50.8%"
             >
-              <span class="inline-block text-6xl font-medium">I</span
-              ><span
-                class="inline-block text-6xl font-medium"
-                style="opacity: 0"
-                >nterface</span
-              >
+              <span class="animation-title">I</span
+              ><span class="animation-title" style="opacity: 0">nterface</span>
             </div>
           </section>
           <section data-auto-animate class="relative h-full">
@@ -358,10 +360,8 @@
               data-id="api-animation"
               style="position: absolute; top: 30%; left: 0"
             >
-              <span class="inline-block text-6xl font-medium">A</span
-              ><span
-                class="inline-block text-6xl font-medium"
-                style="opacity: 1"
+              <span class="animation-title">A</span
+              ><span class="animation-title" style="opacity: 1"
                 >pplication</span
               >
             </div>
@@ -369,10 +369,8 @@
               data-id="api-animation"
               style="position: absolute; top: 40%; left: 0"
             >
-              <span class="inline-block text-6xl font-medium">P</span
-              ><span
-                class="inline-block text-6xl font-medium"
-                style="opacity: 1"
+              <span class="animation-title">P</span
+              ><span class="animation-title" style="opacity: 1"
                 >rogramming</span
               >
             </div>
@@ -380,12 +378,8 @@
               data-id="api-animation"
               style="position: absolute; top: 50%; left: 50.8%"
             >
-              <span class="inline-block text-6xl font-medium">I</span
-              ><span
-                class="inline-block text-6xl font-medium"
-                style="opacity: 0"
-                >nterface</span
-              >
+              <span class="animation-title">I</span
+              ><span class="animation-title" style="opacity: 0">nterface</span>
             </div>
           </section>
           <section data-auto-animate class="relative h-full">
@@ -393,10 +387,8 @@
               data-id="api-animation"
               style="position: absolute; top: 30%; left: 0"
             >
-              <span class="inline-block text-6xl font-medium">A</span
-              ><span
-                class="inline-block text-6xl font-medium"
-                style="opacity: 1"
+              <span class="animation-title">A</span
+              ><span class="animation-title" style="opacity: 1"
                 >pplication</span
               >
             </div>
@@ -404,10 +396,8 @@
               data-id="api-animation"
               style="position: absolute; top: 40%; left: 0"
             >
-              <span class="inline-block text-6xl font-medium">P</span
-              ><span
-                class="inline-block text-6xl font-medium"
-                style="opacity: 1"
+              <span class="animation-title">P</span
+              ><span class="animation-title" style="opacity: 1"
                 >rogramming</span
               >
             </div>
@@ -415,24 +405,18 @@
               data-id="api-animation"
               style="position: absolute; top: 50%; left: 0"
             >
-              <span class="inline-block text-6xl font-medium">I</span
-              ><span
-                class="inline-block text-6xl font-medium"
-                style="opacity: 1"
-                >nterface</span
-              >
+              <span class="animation-title">I</span
+              ><span class="animation-title" style="opacity: 1">nterface</span>
             </div>
             <span
               class="
                 absolute
                 w-[75%]
-                text-4xl
-                italic
-                text-gray-500
                 -translate-x-1/2
                 top-[70%]
                 left-1/2
-                opacity-1
+                subtitle
+                fragment
               "
               >Basically how software applications communicate with each
               other</span
@@ -447,10 +431,10 @@
               >
                 <div
                   class="flex flex-col items-center fragment fade-down"
-                  data-fragment-index="2"
+                  data-fragment-index="3"
                 >
                   <span class="font-mono text-lg font-medium"
-                    ><span class="p-1 text-white bg-green-500 rounded"
+                    ><span class="p-1 font-bold text-white bg-green-500 rounded"
                       >GET</span
                     >
                     <span class="text-gray-500"
@@ -460,20 +444,28 @@
                   <img src="arrow.svg" class="w-24 transform rotate-180" />
                 </div>
                 <div class="flex justify-center space-x-24">
-                  <img
-                    class="h-28 fragment fade-right"
-                    src="mobile.svg"
-                    data-fragment-index="1"
-                  />
+                  <div class="r-stack">
+                    <img
+                      class="h-28 fragment fade-right"
+                      src="mobile.svg"
+                      data-fragment-index="1"
+                    />
+                    <span
+                      class="px-1 py-3 bg-white fragment"
+                      data-fragment-index="5"
+                    >
+                      📈
+                    </span>
+                  </div>
                   <img
                     class="h-28 fragment fade-left"
                     src="backend.svg"
-                    data-fragment-index="2"
+                    data-fragment-index="3"
                   />
                 </div>
                 <div
                   class="flex flex-col items-center fragment fade-up"
-                  data-fragment-index="3"
+                  data-fragment-index="4"
                 >
                   <img src="arrow.svg" class="w-24" />
                   <span class="font-mono text-lg font-medium text-gray-500">
@@ -484,18 +476,18 @@
               <ol
                 class="flex-grow flex-shrink-0 py-20"
                 style="flex-basis: 33%"
-                data-fragment-index="1"
+                data-fragment-index="2"
               >
-                <li class="fragment fade-right" data-fragment-index="1">
+                <li class="fragment fade-right" data-fragment-index="2">
                   User opens app
                 </li>
-                <li class="fragment fade-right" data-fragment-index="2">
+                <li class="fragment fade-right" data-fragment-index="3">
                   App requests data from API
                 </li>
-                <li class="fragment fade-right" data-fragment-index="3">
+                <li class="fragment fade-right" data-fragment-index="4">
                   API authenticates request and returns data
                 </li>
-                <li class="fragment fade-right" data-fragment-index="4">
+                <li class="fragment fade-right" data-fragment-index="5">
                   App processes and displays data
                 </li>
               </ol>
@@ -503,16 +495,166 @@
           </section>
         </section>
         <section>
-          <h1 class="r-fit-text">Software Development Life Cycle (SDLC)</h1>
-          <ul>
-            <li class="fragment fade-left">Planning</li>
-            <li class="fragment fade-left">Analysis</li>
-            <li class="fragment fade-left">Design</li>
-            <li class="fragment fade-left">Development</li>
-            <li class="fragment fade-left">Testing</li>
-            <li class="fragment fade-left">Deployment</li>
-            <li class="fragment fade-left">Maintenance</li>
-          </ul>
+          <section>
+            <h1 class="r-fit-text">Software Development Process</h1>
+            <span class="subtitle">How do we make MakeShift?</span>
+          </section>
+          <section data-auto-animate>
+            <div class="mx-auto cards" data-id="sdlc">
+              <span
+                data-id="sdlc"
+                class="inline-block text-lg text-center text-black"
+                >MakeShift Backlog</span
+              >
+              <div data-id="card-1" class="card">
+                <span class="card-title">Make the site perform better</span>
+                <div class="card-footer">
+                  <span class="card-label">
+                    <div class="card-check"></div>
+                    <span class="card-id">MS-664</span>
+                  </span>
+                  <div class="bg-blue-400 opacity-0 card-assignee">E</div>
+                </div>
+              </div>
+              <div data-id="card-2" class="card">
+                <span class="card-title">Update to Android 12</span>
+                <div class="card-footer">
+                  <span class="card-label">
+                    <div class="card-check"></div>
+                    <span class="card-id">MS-665</span>
+                  </span>
+                  <div class="bg-blue-400 opacity-0 card-assignee">E</div>
+                </div>
+              </div>
+              <div data-id="card-3" class="card">
+                <span class="card-title">Fix the user calendar</span>
+                <div class="card-footer">
+                  <span class="card-label">
+                    <div class="card-check"></div>
+                    <span class="card-id">MS-666</span>
+                  </span>
+                  <div class="bg-blue-400 opacity-0 card-assignee">E</div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section data-auto-animate>
+            <div class="mx-0 cards" data-id="sdlc">
+              <span
+                data-id="sdlc"
+                class="inline-block text-lg text-center text-black"
+                >MakeShift Backlog</span
+              >
+              <div data-id="card-1" class="card">
+                <span class="card-title">Make the site perform better</span>
+                <div class="card-footer">
+                  <span class="card-label">
+                    <div class="card-check"></div>
+                    <span class="card-id">MS-664</span>
+                  </span>
+                  <div class="bg-blue-400 opacity-0 card-assignee">E</div>
+                </div>
+              </div>
+              <div data-id="card-2" class="card">
+                <span class="card-title">Update to Android 12</span>
+                <div class="card-footer">
+                  <span class="card-label">
+                    <div class="card-check"></div>
+                    <span class="card-id">MS-665</span>
+                  </span>
+                  <div class="bg-blue-400 opacity-0 card-assignee">E</div>
+                </div>
+              </div>
+              <div data-id="card-3" class="card">
+                <span class="card-title">Fix the user calendar</span>
+                <div class="card-footer">
+                  <span class="card-label">
+                    <div class="card-check"></div>
+                    <span class="card-id">MS-666</span>
+                  </span>
+                  <div class="bg-blue-400 opacity-0 card-assignee">E</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="avatar absolute top-1/3 left-[66%]"
+              data-id="nicole"
+              data-auto-animate-delay="1"
+            >
+              <img src="woman-smiling.svg" alt="" />
+              <span data-id="nicole">Nicole</span>
+            </div>
+          </section>
+
+          <section data-auto-animate>
+            <div class="cards" data-id="sdlc">
+              <span
+                data-id="sdlc"
+                class="inline-block text-lg text-center text-black"
+                >MakeShift Backlog</span
+              >
+              <div
+                data-id="card-1"
+                class="opacity-25 card"
+                data-auto-animate-delay="1"
+              >
+                <span class="card-title">Make the site perform better</span>
+                <div class="card-footer">
+                  <span class="card-label">
+                    <div class="card-check"></div>
+                    <span class="card-id">MS-664</span>
+                  </span>
+                  <div class="bg-blue-400 opacity-0 card-assignee">E</div>
+                </div>
+              </div>
+              <div data-id="card-2" class="card">
+                <span class="card-title">Update to Android 12</span>
+                <div class="card-footer">
+                  <span class="card-label">
+                    <div class="card-check"></div>
+                    <span class="card-id">MS-665</span>
+                  </span>
+                  <div class="bg-blue-400 opacity-0 card-assignee">E</div>
+                </div>
+              </div>
+              <div data-id="card-3" class="card">
+                <span class="card-title">Fix the user calendar</span>
+                <div class="card-footer">
+                  <span class="card-label">
+                    <div class="card-check"></div>
+                    <span class="card-id">MS-666</span>
+                  </span>
+                  <div class="bg-blue-400 opacity-0 card-assignee">E</div>
+                </div>
+              </div>
+            </div>
+            <div class="avatar absolute top-[17%] left-[30%]" data-id="nicole">
+              <img src="woman-smiling.svg" alt="" />
+              <span data-id="nicole">Nicole</span>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section data-auto-animate class="relative r-stretch">
+            <div
+              class="avatar"
+              style="position: absolute; top: 17%; left: 30%"
+              data-id="nicole"
+            >
+              <img src="woman-smiling.svg" alt="" />
+              <span data-id="nicole">Nicole</span>
+            </div>
+          </section>
+          <section data-auto-animate class="relative r-stretch">
+            <div
+              class="avatar"
+              style="position: absolute; top: 47%; left: 30%"
+              data-id="nicole"
+            >
+              <img src="woman-smiling.svg" alt="" />
+              <span data-id="nicole">Nicole</span>
+            </div>
+          </section>
         </section>
       </div>
     </main>
