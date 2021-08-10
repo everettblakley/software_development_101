@@ -35,18 +35,6 @@
           >
         </section>
         <section>
-          <h1 class="r-fit-text">Software Development Life Cycle (SDLC)</h1>
-          <ul>
-            <li class="fragment fade-left">Planning</li>
-            <li class="fragment fade-left">Analysis</li>
-            <li class="fragment fade-left">Design</li>
-            <li class="fragment fade-left">Development</li>
-            <li class="fragment fade-left">Testing</li>
-            <li class="fragment fade-left">Deployment</li>
-            <li class="fragment fade-left">Maintenance</li>
-          </ul>
-        </section>
-        <section>
           <section>
             <h1 class="r-fit-text">The Tech Stack</h1>
             <h2 class="fragment fade-left">
@@ -73,7 +61,7 @@
                 <a
                   class="w-full mt-8 text-right"
                   href="https://en.wikipedia.org/wiki/Front-end_web_development"
-                  ><small>Wikipedia (2021)</small></a
+                  ><small>Wikipedia</small></a
                 >
               </div>
               <div>
@@ -124,7 +112,7 @@
                 <a
                   class="w-full mt-8 text-right"
                   href="https://www.coursereport.com/blog/front-end-development-vs-back-end-development-where-to-start"
-                  ><small>CourseReport (2021)</small></a
+                  ><small>CourseReport</small></a
                 >
               </div>
               <div class="flex-auto">
@@ -152,7 +140,27 @@
             </div>
           </section>
           <section>
-            <h1>Operations</h1>
+            <h1>
+              <span class="flex items-center justify-center">
+                <img src="operations.svg" alt="" />
+                <span class="ml-6">DevOps</span></span
+              >
+            </h1>
+            <div class="grid place-content-center r-stretch">
+              <span class="flex flex-col fragment">
+                <small class="italic text-left text-gray-500">
+                  A set of practices that combines software development (Dev)
+                  and IT operations (Ops). It aims to shorten the systems
+                  development life cycle and provide continuous delivery with
+                  high software quality.
+                </small>
+                <a
+                  class="w-full mt-8 text-right"
+                  href="https://en.wikipedia.org/wiki/DevOps"
+                  ><small>Wikipedia</small></a
+                >
+              </span>
+            </div>
           </section>
         </section>
         <section>
@@ -162,50 +170,284 @@
           </section>
           <section>
             <h1>Admin Web</h1>
-            <h5>
-              Technologies used to run
-              <a href="https://app.makeshift.ca">app.makeshift.ca</a>
-            </h5>
             <div class="grid grid-flow-col gap-8 mt-16">
-              <div class="flex flex-col items-center">
-                <img class="h-16" src="vue.png" alt="VueJS logo" />
+              <div
+                class="flex flex-col items-center fragment fade-up"
+                data-fragment-index="1"
+              >
+                <img class="h-20" src="vue.png" alt="VueJS logo" />
                 <p>VueJS</p>
                 <small class="italic text-gray-500">Frontend</small>
               </div>
-              <div class="flex flex-col items-center">
-                <img class="h-16" src="rails.png" alt="Ruby on Rails logo" />
+              <div
+                class="flex flex-col items-center fragment fade-up"
+                data-fragment-index="1"
+              >
+                <img class="h-20" src="rails.png" alt="Ruby on Rails logo" />
                 <p>Ruby on Rails</p>
-                <small class="italic text-gray-500">Frontend/Backend</small>
+                <small class="italic text-gray-500">
+                  <div>Frontend</div>
+                  <div class="fragment fade-up" data-fragment-index="2">
+                    Backend
+                  </div>
+                </small>
               </div>
-              <div class="flex flex-col items-center">
-                <img class="h-16" src="postges.png" alt="PostgreSQL logo" />
+              <div
+                class="flex flex-col items-center fragment fade-up"
+                data-fragment-index="2"
+              >
+                <img class="h-20" src="postges.png" alt="PostgreSQL logo" />
                 <p>PostgreSQL</p>
                 <small class="italic text-gray-500">Backend</small>
               </div>
-              <div class="flex flex-col items-center">
-                <img class="h-16" src="heroku.png" alt="Heroku logo" />
+              <div
+                class="flex flex-col items-center fragment fade-up"
+                data-fragment-index="3"
+              >
+                <img class="h-20" src="circle-ci.png" alt="Circle CI logo" />
+                <p>Circle CI</p>
+                <small class="italic text-gray-500">DevOps</small>
+              </div>
+              <div
+                class="flex flex-col items-center fragment fade-up"
+                data-fragment-index="3"
+              >
+                <img class="h-20" src="heroku.png" alt="Heroku logo" />
                 <p>Heroku</p>
-                <small class="italic text-gray-500">Operations</small>
+                <small class="italic text-gray-500">DevOps</small>
               </div>
             </div>
           </section>
           <section>
-            <h1>Whitelabels</h1>
-            <h2>Shift Manager (Jonas)</h2>
-            <h2>ADP Schedules</h2>
-          </section>
-          <section>
             <h1>Mobile</h1>
-            <div class="grid grid-cols-2">
-              <h3></h3>
+            <div class="grid grid-flow-col gap-8 mt-16">
+              <div
+                class="flex flex-col items-center fragment fade-up"
+                data-fragment-index="1"
+              >
+                <img class="h-20" src="java.png" alt="Java logo" />
+                <p>Java</p>
+                <small class="italic text-gray-500">Frontend (Android)</small>
+              </div>
+              <div
+                class="flex flex-col items-center fragment fade-up"
+                data-fragment-index="1"
+              >
+                <img
+                  class="h-20"
+                  src="objective-c.png"
+                  alt="Objective C logo"
+                />
+                <p>Objective-C</p>
+                <small class="italic text-gray-500">Frontend (iOS)</small>
+              </div>
+              <div
+                class="flex flex-col items-center fragment fade-up"
+                data-fragment-index="2"
+              >
+                <img class="h-20" src="makeshift.png" alt="MakeShift logo" />
+                <p>MakeShift</p>
+                <small class="italic text-gray-500">Backend (via API)</small>
+              </div>
             </div>
           </section>
           <section>
             <h1>Employee Web</h1>
-            <h3>React</h3>
-            <h3>Heroku</h3>
+            <div class="grid grid-flow-col gap-8 mt-16">
+              <div class="flex flex-col items-center fragment fade-up">
+                <img class="h-20" src="react.png" alt="React logo" />
+                <p>ReactJS</p>
+                <small class="italic text-gray-500">Frontend</small>
+              </div>
+              <div class="flex flex-col items-center fragment fade-up">
+                <img class="h-20" src="makeshift.png" alt="MakeShift logo" />
+                <p>MakeShift</p>
+                <small class="italic text-gray-500">Backend (via API)</small>
+              </div>
+              <div class="flex flex-col items-center fragment fade-up">
+                <img class="h-20" src="heroku.png" alt="Heroku logo" />
+                <p>Heroku</p>
+                <small class="italic text-gray-500">DevOps</small>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>
+              What the
+              <span class="italic fragment highlight-red">hell</span> is an
+              API?!
+            </h1>
+          </section>
+          <section data-auto-animate class="relative h-full">
+            <div
+              data-id="api-animation"
+              style="position: absolute; top: 30%; left: 50%"
+            >
+              <span class="inline-block text-6xl font-medium">A</span
+              ><span
+                class="inline-block text-6xl font-medium"
+                style="opacity: 0"
+                >pplication</span
+              >
+            </div>
+            <div
+              data-id="api-animation"
+              style="position: absolute; top: 40%; left: 50%"
+            >
+              <span class="inline-block text-6xl font-medium">P</span
+              ><span
+                class="inline-block text-6xl font-medium"
+                style="opacity: 0"
+                >rogramming</span
+              >
+            </div>
+            <div
+              data-id="api-animation"
+              style="position: absolute; top: 50%; left: 50.8%"
+            >
+              <span class="inline-block text-6xl font-medium">I</span
+              ><span
+                class="inline-block text-6xl font-medium"
+                style="opacity: 0"
+                >nterface</span
+              >
+            </div>
+          </section>
+          <section data-auto-animate class="relative h-full">
+            <div
+              data-id="api-animation"
+              style="position: absolute; top: 30%; left: 25%"
+            >
+              <span class="inline-block text-6xl font-medium">A</span
+              ><span
+                class="inline-block text-6xl font-medium"
+                style="opacity: 1"
+                >pplication</span
+              >
+            </div>
+            <div
+              data-id="api-animation"
+              style="position: absolute; top: 40%; left: 50%"
+            >
+              <span class="inline-block text-6xl font-medium">P</span
+              ><span
+                class="inline-block text-6xl font-medium"
+                style="opacity: 0"
+                >rogramming</span
+              >
+            </div>
+            <div
+              data-id="api-animation"
+              style="position: absolute; top: 50%; left: 50.8%"
+            >
+              <span class="inline-block text-6xl font-medium">I</span
+              ><span
+                class="inline-block text-6xl font-medium"
+                style="opacity: 0"
+                >nterface</span
+              >
+            </div>
+          </section>
+          <section data-auto-animate class="relative h-full">
+            <div
+              data-id="api-animation"
+              style="position: absolute; top: 30%; left: 25%"
+            >
+              <span class="inline-block text-6xl font-medium">A</span
+              ><span
+                class="inline-block text-6xl font-medium"
+                style="opacity: 1"
+                >pplication</span
+              >
+            </div>
+            <div
+              data-id="api-animation"
+              style="position: absolute; top: 40%; left: 25%"
+            >
+              <span class="inline-block text-6xl font-medium">P</span
+              ><span
+                class="inline-block text-6xl font-medium"
+                style="opacity: 1"
+                >rogramming</span
+              >
+            </div>
+            <div
+              data-id="api-animation"
+              style="position: absolute; top: 50%; left: 50.8%"
+            >
+              <span class="inline-block text-6xl font-medium">I</span
+              ><span
+                class="inline-block text-6xl font-medium"
+                style="opacity: 0"
+                >nterface</span
+              >
+            </div>
+          </section>
+          <section data-auto-animate class="relative h-full">
+            <div
+              data-id="api-animation"
+              style="position: absolute; top: 30%; left: 25%"
+            >
+              <span class="inline-block text-6xl font-medium">A</span
+              ><span
+                class="inline-block text-6xl font-medium"
+                style="opacity: 1"
+                >pplication</span
+              >
+            </div>
+            <div
+              data-id="api-animation"
+              style="position: absolute; top: 40%; left: 25%"
+            >
+              <span class="inline-block text-6xl font-medium">P</span
+              ><span
+                class="inline-block text-6xl font-medium"
+                style="opacity: 1"
+                >rogramming</span
+              >
+            </div>
+            <div
+              data-id="api-animation"
+              style="position: absolute; top: 50%; left: 25%"
+            >
+              <span class="inline-block text-6xl font-medium">I</span
+              ><span
+                class="inline-block text-6xl font-medium"
+                style="opacity: 1"
+                >nterface</span
+              >
+            </div>
+            <span
+              class="
+                absolute
+                w-[75%]
+                text-4xl
+                italic
+                text-gray-500
+                -translate-x-1/2
+                top-[70%]
+                left-1/2
+                opacity-1
+              "
+              >Basically how software applications communicate with each
+              other</span
+            >
           </section>
           <section></section>
+        </section>
+        <section>
+          <h1 class="r-fit-text">Software Development Life Cycle (SDLC)</h1>
+          <ul>
+            <li class="fragment fade-left">Planning</li>
+            <li class="fragment fade-left">Analysis</li>
+            <li class="fragment fade-left">Design</li>
+            <li class="fragment fade-left">Development</li>
+            <li class="fragment fade-left">Testing</li>
+            <li class="fragment fade-left">Deployment</li>
+            <li class="fragment fade-left">Maintenance</li>
+          </ul>
         </section>
       </div>
     </main>

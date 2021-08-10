@@ -6,6 +6,7 @@
 @tailwind utilities;
 
 :root {
+  --r-main-font-size: 36px;
   --r-background-color: #fafafa;
   --r-main-font: "Inter", sans-serif;
   --r-heading-font: "Inter", sans-serif;
