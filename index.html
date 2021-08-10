@@ -318,7 +318,7 @@
           <section data-auto-animate class="relative h-full">
             <div
               data-id="api-animation"
-              style="position: absolute; top: 30%; left: 25%"
+              style="position: absolute; top: 30%; left: 0"
             >
               <span class="inline-block text-6xl font-medium">A</span
               ><span
@@ -353,7 +353,7 @@
           <section data-auto-animate class="relative h-full">
             <div
               data-id="api-animation"
-              style="position: absolute; top: 30%; left: 25%"
+              style="position: absolute; top: 30%; left: 0"
             >
               <span class="inline-block text-6xl font-medium">A</span
               ><span
@@ -364,7 +364,7 @@
             </div>
             <div
               data-id="api-animation"
-              style="position: absolute; top: 40%; left: 25%"
+              style="position: absolute; top: 40%; left: 0"
             >
               <span class="inline-block text-6xl font-medium">P</span
               ><span
@@ -388,7 +388,7 @@
           <section data-auto-animate class="relative h-full">
             <div
               data-id="api-animation"
-              style="position: absolute; top: 30%; left: 25%"
+              style="position: absolute; top: 30%; left: 0"
             >
               <span class="inline-block text-6xl font-medium">A</span
               ><span
@@ -399,7 +399,7 @@
             </div>
             <div
               data-id="api-animation"
-              style="position: absolute; top: 40%; left: 25%"
+              style="position: absolute; top: 40%; left: 0"
             >
               <span class="inline-block text-6xl font-medium">P</span
               ><span
@@ -410,7 +410,7 @@
             </div>
             <div
               data-id="api-animation"
-              style="position: absolute; top: 50%; left: 25%"
+              style="position: absolute; top: 50%; left: 0"
             >
               <span class="inline-block text-6xl font-medium">I</span
               ><span
@@ -435,7 +435,69 @@
               other</span
             >
           </section>
-          <section></section>
+          <section>
+            <h2>Simple Example</h2>
+            <div class="flex">
+              <div
+                class="flex flex-col justify-center flex-grow flex-shrink-0 pr-16 "
+                style="flex-basis: 66%"
+              >
+                <div
+                  class="flex flex-col items-center fragment fade-down"
+                  data-fragment-index="2"
+                >
+                  <span class="font-mono text-lg font-medium"
+                    ><span class="p-1 text-white bg-green-500 rounded"
+                      >GET</span
+                    >
+                    <span class="text-gray-500"
+                      >https://makeshift.ca/api/v3/shifts</span
+                    ></span
+                  >
+                  <img src="arrow.svg" class="w-24 transform rotate-180" />
+                </div>
+                <div class="flex justify-center space-x-24">
+                  <img
+                    class="h-28 fragment fade-right"
+                    src="mobile.svg"
+                    data-fragment-index="1"
+                  />
+                  <img
+                    class="h-28 fragment fade-left"
+                    src="backend.svg"
+                    data-fragment-index="2"
+                  />
+                </div>
+                <div
+                  class="flex flex-col items-center fragment fade-up"
+                  data-fragment-index="3"
+                >
+                  <img src="arrow.svg" class="w-24" />
+                  <span class="font-mono text-lg font-medium text-gray-500">
+                    { data: { scheduled_shifts: [...] } }
+                  </span>
+                </div>
+              </div>
+              <ol
+                class="flex-grow flex-shrink-0 py-20"
+                style="flex-basis: 33%"
+                data-fragment-index="1"
+              >
+                <li class="fragment fade-right" data-fragment-index="1">
+                  User opens app
+                </li>
+                <li class="fragment fade-right" data-fragment-index="2">
+                  App requests data from API
+                </li>
+                <li class="fragment fade-right" data-fragment-index="3">
+                  API authenticates request and returns data
+                </li>
+                <li class="fragment fade-right" data-fragment-index="4">
+                  App processes and displays data
+                </li>
+              </ol>
+            </div>
+          </section>
         </section>
         <section>
           <h1 class="r-fit-text">Software Development Life Cycle (SDLC)</h1>
