@@ -8,6 +8,7 @@ let deck = new Reveal({
 
 deck.initialize({
   hash: true,
+  navigationMode: 'linear'
 });
 
 deck.getSlides().forEach((slide) => {
