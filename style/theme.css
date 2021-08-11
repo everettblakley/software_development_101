@@ -27,6 +27,10 @@ span.animation-title {
   @apply text-gray-dark font-bold italic text-4xl tracking-tight;
 }
 
+a > .subtitle {
+  color: var(--r-link-color);
+}
+
 .tech-card--list {
   @apply grid grid-flow-col gap-8 mt-16;
 }
@@ -40,63 +44,7 @@ span.animation-title {
 }
 
 .tech-card--list div.tech-card small {
-  @apply italic text-gray-500;
-}
-
-.cards {
-  @apply grid grid-cols-1 gap-4 min-w-max max-w-max;
-}
-
-.card {
-  @apply flex flex-col rounded bg-gray-100 text-black p-4 max-w-[256px] shadow-lg cursor-pointer transition-colors h-[100px];
-}
-
-.card:hover {
-  @apply bg-gray-200;
-}
-
-.card > .card-title {
-  @apply text-left text-base text-black font-normal;
-}
-
-.card.card--muted > .card-title {
-  @apply text-gray-300;
-}
-
-.card > .card-footer {
-  @apply flex justify-between items-center mt-4;
-}
-
-.card > .card-footer > .card-label {
-  @apply flex items-center space-x-2;
-}
-
-.card > .card-footer > .card-label > .card-check {
-  @apply bg-blue-300 text-white rounded h-4 w-4 grid place-content-center text-xs;
-}
-.card > .card-footer > .card-label > .card-check::after {
-  content: "✔";
-  @apply text-white;
-}
-
-.card > .card-footer > .card-label > .card-id {
-  @apply text-base;
-}
-
-.card > .card-footer > .card-assignee {
-  @apply h-8 w-8 grid place-content-center text-white text-base font-medium rounded-full;
-}
-
-.avatar {
-  @apply flex flex-col items-center justify-center h-[100px];
-}
-
-.avatar > img {
-  @apply h-20 m-0 !important;
-}
-
-.avatar > span {
-  @apply text-lg font-medium;
+  @apply italic text-gray-dark;
 }
 
 .speech-bubble {
